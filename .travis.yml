@@ -5,5 +5,6 @@ env:
 - DB=postgresql
 script:
 - RAILS_ENV=test
+- bundle exec rspec spec
 before_script:
 - psql -c 'create database market_place_api_test' -U postgres
