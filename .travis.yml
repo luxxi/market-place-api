@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+- 2.2.0
+env:
+- DB=postgresql
+script:
+- RAILS_ENV=test
+before_script:
+- psql -c 'create database market-place-api_test' -U postgres

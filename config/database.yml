@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: market_place_api_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: market_place_api_test
+  host: localhost
